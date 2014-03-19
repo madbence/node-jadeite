@@ -1,0 +1,25 @@
+{
+  "name": "jadeite",
+  "version": "0.0.1",
+  "description": "Jade-like template library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Everything is ok! ;)'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:madbence/node-jadeite.git"
+  },
+  "keywords": [
+    "template",
+    "jade",
+    "proxy",
+    "html"
+  ],
+  "author": "Bence Dányi <madbence@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madbence/node-jadeite/issues"
+  },
+  "homepage": "https://github.com/madbence/node-jadeite"
+}
