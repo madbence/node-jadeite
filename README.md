@@ -2,6 +2,8 @@
 
 Jadeite is a [Jade](http://jade-lang.com/)-like template language, and it's actually valid JavaScript.
 
+Feedbacks are welcome!
+
 ## Install
 
 *Unstable, use at your own risk*
@@ -78,3 +80,7 @@ function(data) {
 - Conditionals: `when(condition)(/* do this */)(otherwise(/* do this*/))`
 - Loops: `each(item in items)(li(item))`
 - Unicorns
+
+## License
+
+MIT
