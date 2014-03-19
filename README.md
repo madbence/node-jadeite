@@ -8,8 +8,8 @@ Feedbacks are welcome!
 
 *Unstable, use at your own risk*
 
-This package uses the **[(old) Proxy API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Old_Proxy_API)**,
-so you need *v0.11* node (and `--harmony` flags) or a decent browser (Harmony enabled).
+This package uses the *[(old) Proxy API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Old_Proxy_API)*,
+so you need *v0.11* node (and `--harmony` flags) or a harmony enabled browser..
 
 With `npm` do
 
@@ -46,7 +46,7 @@ function myTemplate(magic) {
 
 Compile it, and it's ready to use:
 
-```
+```js
 var jadeite = require('jadeite');
 var template = jadeite(myTemplate);
 
@@ -79,6 +79,8 @@ function(data) {
 
 - Conditionals: `when(condition)(/* do this */)(otherwise(/* do this*/))`
 - Loops: `each(item in items)(li(item))`
+- `jadeite < input.js` command
+- Less parens *:)))*
 - Unicorns
 
 ## License
