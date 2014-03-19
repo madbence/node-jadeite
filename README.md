@@ -4,6 +4,10 @@ Jadeite is a [Jade](http://jade-lang.com/)-like template language, and it's actu
 
 Feedbacks are welcome!
 
+## Why?
+
+- Because it's fun!
+
 ## Install
 
 *Unstable, use at your own risk*
