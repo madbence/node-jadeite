@@ -23,7 +23,7 @@ Write your template function:
 
 ```js
 function myTemplate(magic) {
-  with(magic) { // with is needed if you want to omit property access
+  with(magic) { // `with` is needed if you want to omit property access
     return html
       (head
         (title
@@ -34,8 +34,8 @@ function myTemplate(magic) {
       )
       (body
         (h1
-          (a(href = link) // wow, so variable attributes!
-            (linkText) // such variable content
+          (a(href = link) // wow, so dynamic attributes!
+            (linkText) // such dynamic content
           )
           (input()) // empty tag, function call needed, or it will be substituted with the `input` variable
         )
