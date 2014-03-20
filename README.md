@@ -4,6 +4,12 @@ Jadeite is a [Jade](http://jade-lang.com/)-like template language, and it's actu
 
 Feedbacks are welcome!
 
+## Features
+
+- Variable substitution
+- Compiled template (*fast!*)
+- Conditionals
+
 ## Why?
 
 - Because it's fun!
@@ -42,6 +48,9 @@ function myTemplate(magic) {
             (linkText) // such dynamic content
           )
           (input()) // empty tag, function call needed, or it will be substituted with the `input` variable
+          (iff(cond)
+            ('true!')
+          )
         )
       );
   }
@@ -69,19 +78,22 @@ console.log(template({
 
 ```js
 function(data) {
-  var stack = [];
-  stack.push('<html><head><title>Welcome on my Awesome site!</title><script type="text/javascript" src="/bundle.js" /></head><body><h1><a href="');
-  stack.push(data.link);
-  stack.push('">');
-  stack.push(data.linkText);
-  stack.push('</a><input /></h1></body></html>');
-  return stack.join('');  
+  var a = [];
+  a.push('<html><head><title>Welcome on my Awesome site!</title><script type="text/javascript" src="/bundle.js" /></head><body><h1><a href="');
+  a.push(data.link);
+  a.push('">');
+  a.push(data.linkText);
+  a.push('</a><input />');
+  if(data.cond) {
+    a.push('true!');
+  }
+  a.push('</h1></body></html>');
+  return a.join('');
 }
 ```
 
 ## Plans
 
-- Conditionals: `when(condition)(/* do this */)(otherwise(/* do this*/))`
 - Loops: `each(item in items)(li(item))`
 - `jadeite < input.js` command
 - Less parens *:)))*
