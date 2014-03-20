@@ -15,7 +15,10 @@ function myTemplate(magic) {
           (a(href = link)
             (linkText)
           )
-          (input()) // empty tag, function call needed, or it will be substituted with the `input` variable
+          (input())
+          (iff(cond)
+            ('true!')
+          )
         )
       );
   }
@@ -24,5 +27,6 @@ function myTemplate(magic) {
 console.log(_(myTemplate).toString());
 console.log(_(myTemplate)({
   link: '/home',
-  linkText: 'Hello world!'
+  linkText: 'Hello world!',
+  cond: true
 }));
