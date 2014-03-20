@@ -1,6 +1,6 @@
 {
   "name": "jadeite",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Jade-like template library",
   "main": "index.js",
   "scripts": {
